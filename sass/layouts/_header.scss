@@ -1,10 +1,58 @@
 .header{
-
    background-color: $color-light;
    margin-top: 1.15vw;
+
+   &__first-row{
+      display: flex;
+      align-items: center;
+      margin-left: 7.29vw;
+   }
+
+   &__adress{
+      margin-left: 2.97vw;
+   }
+
+   &__map{
+      margin-left: 2.97vw;
+   }
+
+   &__price{
+      margin-left: 2.97vw;
+   }
+
+   &__question{
+      margin-left: 2.97vw;
+   }
+
+   &__call{
+      margin-left: 2.97vw;
+   }
+
+   &__nav{
+      margin-left: 7.29vw;
+   }
+
+   &__navigation{
+      display: flex;
+      margin-bottom: 1.15vw;
+   }
+
+   &__horizontal-line{
+      width: 85.42vw;
+      height: 0.05vw;
+      background-color: $color-links;
+      opacity: 0.15;
+      margin-top: 1.15vw;
+      margin-right: 7.29vw;
+      margin-bottom: 1.15vw;
+      margin-left: 7.29vw;
+   }
 }
 
-.header__first-row{
-   margin-left: 7.29vw;
+.navigation__item:nth-of-type(n){
+   margin-right: 3.65vw;
 }
 
+.navigation__item:first-of-type{
+   margin-right: 3.49vw;
+}

@@ -1,0 +1,23 @@
+.adress{
+   
+   display: flex;
+   
+   font-size: 0.57vw;
+   font-weight: 400;
+   line-height: 0.94vw;
+   color: $color-links;
+   text-align: right;
+   
+   &__icon{
+      display: inline-block;
+      width: 1.82vw;
+      height: 1.82vw;
+      background: url(../../assets/icons/Карта.svg);
+      background-position: center;
+      background-size: contain
+   }
+
+   &__text{
+      width: 8.18vw;
+   }
+};

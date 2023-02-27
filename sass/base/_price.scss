@@ -1,0 +1,24 @@
+.price{
+   display: flex;
+   align-items: center;
+
+   &__icon{
+      width: 1.82vw;
+      height: 1.82vw;
+      display: block;
+      background: url(../../assets/icons/Иконка.svg);
+      background-position: center;
+      background-size: cover;
+   }
+
+   &__title{
+      width: 7.66vw;
+      font-size: 0.57vw;
+      font-weight: 700;
+      line-height: 0.99vw;
+      letter-spacing: 5%;
+      margin-left: 0.57vw;
+      border-bottom: 1px dashed $color-for-colored-button;
+      color: $color-links;
+   }
+}

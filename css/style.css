@@ -1,5 +1,7 @@
+@charset "UTF-8";
 body {
   font-family: "Manrope", sans-serif;
+  position: relative;
 }
 
 h1 {
@@ -18,26 +20,398 @@ h2 {
 }
 
 .button {
+  font-family: Manrope;
+  width: 20.83vw;
+  display: flex;
+  align-items: center;
   font-size: 0.83vw;
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.25vw;
+  border: none;
+  border-radius: 26.04vw;
+}
+
+.button--red-button {
+  background: #FD2016;
+  padding: 1.3vw 2.86vw 1.35vw 2.81vw;
   letter-spacing: 4%;
+  color: #FFFFFF;
+}
+
+.red-button__arrow-icon {
+  display: block;
+  width: 1.15vw;
+  height: 1.15vw;
+  background: url(../../assets/icons/Hero-red-button-arrow.svg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 0.73vw;
+}
+
+.button--transparent-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 1px solid #FFFFFF;
+  letter-spacing: 5%;
+  padding: 0 1.72vw 0 1.61vw;
+  color: #FFFFFF;
+}
+
+.transparent-button__call-icon {
+  display: block;
+  width: 1.56vw;
+  height: 1.56vw;
+  background: url(../../assets/icons/Hero-call-icon.svg);
+  background-position: center;
+  background-size: cover;
+  margin-right: 0.63vw;
 }
 
 .logo {
   display: flex;
+  align-items: center;
+  width: 19.69vw;
+  text-decoration: none;
   font-family: Manrope;
   font-size: 0.57vw;
   font-weight: 400;
   line-height: 1.04vw;
   letter-spacing: 2%;
+  color: #2A2A2A;
+}
+.logo__image {
+  width: 11.09vw;
+  height: 2.6vw;
+}
+.logo__text {
+  width: 7.4vw;
+  margin-left: 1.2vw;
 }
 
+.adress {
+  display: flex;
+  font-size: 0.57vw;
+  font-weight: 400;
+  line-height: 0.94vw;
+  color: #2A2A2A;
+  text-align: right;
+}
+.adress__icon {
+  display: inline-block;
+  width: 1.82vw;
+  height: 1.82vw;
+  background: url(../../assets/icons/Карта.svg);
+  background-position: center;
+  background-size: contain;
+}
+.adress__text {
+  width: 8.18vw;
+}
+
+.map {
+  display: flex;
+  align-items: center;
+}
+.map__icon {
+  display: block;
+  width: 0.63vw;
+  height: 0.78vw;
+  background-position: center;
+  background-size: cover;
+  background: url(../../assets/icons/see-on-map.svg);
+  margin-right: 0.52vw;
+}
+.map__title {
+  width: 6.25vw;
+  font-size: 0.57vw;
+  font-weight: 700;
+  line-height: 0.99vw;
+  letter-spacing: 5%;
+  color: #2A2A2A;
+  border-bottom: 1px dashed #FD2016;
+  padding-bottom: 0.21vw;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+.price__icon {
+  width: 1.82vw;
+  height: 1.82vw;
+  display: block;
+  background: url(../../assets/icons/Иконка.svg);
+  background-position: center;
+  background-size: cover;
+}
+.price__title {
+  width: 7.66vw;
+  font-size: 0.57vw;
+  font-weight: 700;
+  line-height: 0.99vw;
+  letter-spacing: 5%;
+  margin-left: 0.57vw;
+  border-bottom: 1px dashed #FD2016;
+  color: #2A2A2A;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+}
+.question__title {
+  width: 5.52vw;
+  font-size: 0.57vw;
+  font-weight: 400;
+  line-height: 0.94vw;
+  letter-spacing: 3%;
+  color: #2A2A2A;
+}
+.question__whatsapp-icon {
+  display: block;
+  width: 2.34vw;
+  height: 2.34vw;
+  background: url(../../assets/icons/Whatsapp-icon.svg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 0.94vw;
+}
+.question__telegram-icon {
+  display: block;
+  width: 2.34vw;
+  height: 2.34vw;
+  background: url(../../assets/icons/Tg-icon.svg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 0.31vw;
+}
+.question__viber-icon {
+  display: block;
+  width: 2.34vw;
+  height: 2.34vw;
+  background: url(../../assets/icons/Viber-icon.svg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 0.31vw;
+}
+
+.call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.63vw;
+  font-weight: 400;
+  line-height: 1.09vw;
+  letter-spacing: 5%;
+  color: #2A2A2A;
+}
+.call__work-schedule {
+  display: flex;
+  align-items: center;
+}
+.call__work-schedule-icon {
+  display: block;
+  width: 0.21vw;
+  height: 0.21vw;
+  background-color: #20C863;
+  margin-right: 0.31vw;
+}
+.call__number {
+  display: flex;
+  align-items: center;
+  font-size: 1.04vw;
+  font-weight: 700;
+  line-height: 0.52vw;
+  margin-top: 0.31vw;
+  margin-bottom: 0.31vw;
+}
+.call__number-icon {
+  display: inline-block;
+  width: 0.47vw;
+  height: 0.26vw;
+  background: url(../../assets/icons/Стрелкa.svg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 0.21vw;
+}
+.call__order-call {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed #FD2016;
+}
+.call__order-call-icon {
+  display: inline-block;
+  width: 0.31vw;
+  height: 0.31vw;
+  background: url(../../assets/icons/Order-call.svg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 0.31vw;
+}
+
+.navigation__item {
+  font-size: 0.63vw;
+  font-weight: 600;
+  line-height: 0.83vw;
+  letter-spacing: 15%;
+  text-transform: uppercase;
+  color: #2A2A2A;
+}
+.navigation__item a {
+  text-decoration: none;
+}
+.navigation__item a:hover {
+  color: #FD2016;
+}
+.navigation__item:first-of-type {
+  width: 4.43vw;
+}
+.navigation__item:nth-of-type(2) {
+  width: 3.8vw;
+}
+.navigation__item:nth-of-type(3) {
+  width: 10.42vw;
+}
+.navigation__item:nth-of-type(4) {
+  width: 3.91vw;
+}
+.navigation__item:nth-of-type(5) {
+  width: 6.09vw;
+}
+.navigation__item:nth-of-type(6) {
+  width: 8.18vw;
+}
+.navigation__item:nth-of-type(7) {
+  width: 9.06vw;
+}
+.navigation__item:nth-of-type(8) {
+  width: 6.51vw;
+}
+
+.scroll-down {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 22.4vw;
+  left: -12.5vw;
+}
+.scroll-down__title {
+  width: 4.79vw;
+  font-family: "Porsche Next Arabic TT";
+  font-size: 0.83vw;
+  font-weight: 700;
+  line-height: 1.3vw;
+  letter-spacing: 10%;
+  color: #EFEFEF;
+  margin-left: 1.98vw;
+}
+.scroll-down__line {
+  width: 25.42vw;
+  height: 0.16vw;
+  background-color: #EFEFEF;
+}
+
+@font-face {
+  font-family: "Porsche Next Arabic TT";
+  src: url(../../assets/fonts/PorscheNextArabicTT-Regular.ttf);
+  font-weight: 700;
+}
 .header {
   background-color: #FFFFFF;
   margin-top: 1.15vw;
 }
-
 .header__first-row {
+  display: flex;
+  align-items: center;
   margin-left: 7.29vw;
+}
+.header__adress {
+  margin-left: 2.97vw;
+}
+.header__map {
+  margin-left: 2.97vw;
+}
+.header__price {
+  margin-left: 2.97vw;
+}
+.header__question {
+  margin-left: 2.97vw;
+}
+.header__call {
+  margin-left: 2.97vw;
+}
+.header__nav {
+  margin-left: 7.29vw;
+}
+.header__navigation {
+  display: flex;
+  margin-bottom: 1.15vw;
+}
+.header__horizontal-line {
+  width: 85.42vw;
+  height: 0.05vw;
+  background-color: #2A2A2A;
+  opacity: 0.15;
+  margin-top: 1.15vw;
+  margin-right: 7.29vw;
+  margin-bottom: 1.15vw;
+  margin-left: 7.29vw;
+}
+
+.navigation__item:nth-of-type(n) {
+  margin-right: 3.65vw;
+}
+
+.navigation__item:first-of-type {
+  margin-right: 3.49vw;
+}
+
+.hero {
+  background: url(../../assets/images/bg-min.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-left: 7.29vw;
+}
+.hero__first-row {
+  width: 92.71vw;
+  padding-top: 6.67vw;
+}
+.hero__first-row-title {
+  width: 52.66vw;
+  margin-left: 5.99vw;
+  color: #FFFFFF;
+}
+.hero__first-row-title-bold-text {
+  font-size: 3.39vw;
+  font-weight: 700;
+  line-height: 4.95vw;
+  letter-spacing: 2%;
+}
+.hero__first-row-subtitle {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 2%;
+  color: #FFFFFF;
+  margin-top: 2.34vw;
+  margin-bottom: 2.34vw;
+  margin-left: 5.99vw;
+}
+.hero__first-row-buttons {
+  display: flex;
+  margin-left: 5.99vw;
+}
+.hero__colored-button {
+  margin-right: 1.15vw;
+}
+.hero__second-row {
+  display: flex;
+}
+.hero__second-row__first-column {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */

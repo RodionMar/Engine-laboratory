@@ -1,0 +1,25 @@
+.map{
+   display: flex;
+   align-items: center;
+   
+   &__icon{
+      display: block;
+      width: 0.63vw;
+      height: 0.78vw;
+      background-position: center;
+      background-size: cover;
+      background: url(../../assets/icons/see-on-map.svg);
+      margin-right: 0.52vw;
+   }
+
+   &__title{
+      width: 6.25vw;
+      font-size: 0.57vw;
+      font-weight: 700;
+      line-height: 0.99vw;
+      letter-spacing: 5%;
+      color: $color-links;
+      border-bottom: 1px dashed $color-for-colored-button;
+      padding-bottom: 0.21vw;
+   }
+}

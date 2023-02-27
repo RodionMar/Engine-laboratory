@@ -1,0 +1,43 @@
+.question{
+   display: flex;
+   align-items: center;
+
+   &__title{
+      width: 5.52vw;
+      font-size: 0.57vw;
+      font-weight: 400;
+      line-height: 0.94vw;
+      letter-spacing: 3%;
+      color: $color-links;
+   }
+
+   &__whatsapp-icon{
+      display: block;
+      width: 2.34vw;
+      height: 2.34vw;
+      background: url(../../assets/icons/Whatsapp-icon.svg);
+      background-position: center;
+      background-size: cover;
+      margin-left: 0.94vw;
+   }
+
+   &__telegram-icon{
+      display: block;
+      width: 2.34vw;
+      height: 2.34vw;
+      background: url(../../assets/icons/Tg-icon.svg);
+      background-position: center;
+      background-size: cover;
+      margin-left: 0.31vw;
+   }
+
+   &__viber-icon{
+      display: block;
+      width: 2.34vw;
+      height: 2.34vw;
+      background: url(../../assets/icons/Viber-icon.svg);
+      background-position: center;
+      background-size: cover;
+      margin-left: 0.31vw;
+   }
+}

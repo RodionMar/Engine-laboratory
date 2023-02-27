@@ -1,8 +1,22 @@
 .logo{
    display: flex;
+   align-items: center;
+   width: 19.69vw;
+   text-decoration: none;
    font-family: Manrope;
    font-size: 0.57vw;
    font-weight: 400;
    line-height: 1.04vw;
    letter-spacing: 2%;
+   color: $color-links;
+   
+   &__image{
+      width: 11.09vw;
+      height: 2.60vw;
+   };
+
+   &__text{
+      width: 7.40vw;
+      margin-left: 1.20vw;
+   };
 }

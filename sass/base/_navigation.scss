@@ -1,0 +1,51 @@
+.navigation{
+
+   &__item{
+      font-size: 0.63vw;
+      font-weight: 600;
+      line-height: 0.83vw;
+      letter-spacing: 15%;
+      text-transform: uppercase;
+      color: $color-links;
+   }
+
+   &__item a{
+      text-decoration: none;
+   }
+
+   &__item a:hover{
+      color: $color-for-colored-button;
+   }
+
+   &__item:first-of-type{
+      width: 4.43vw;
+   }
+
+   &__item:nth-of-type(2){
+      width: 3.80vw;
+   }
+
+   &__item:nth-of-type(3){
+      width: 10.42vw;
+   }
+
+   &__item:nth-of-type(4){
+      width: 3.91vw;
+   }
+
+   &__item:nth-of-type(5){
+      width: 6.09vw;
+   }
+
+   &__item:nth-of-type(6){
+      width: 8.18vw;
+   }
+
+   &__item:nth-of-type(7){
+      width: 9.06vw;
+   }
+
+   &__item:nth-of-type(8){
+      width: 6.51vw;
+   }
+}

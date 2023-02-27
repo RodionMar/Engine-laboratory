@@ -1,0 +1,27 @@
+.scroll-down{
+   display: flex;
+   align-items: center;
+   flex-direction: row-reverse;
+   position: absolute;
+   transform: rotate(-90deg);
+   top: 22.40vw;
+   left: -12.50vw;
+
+   &__title{
+      width: 4.79vw;
+      font-family: 'Porsche Next Arabic TT';
+      font-size: 0.83vw;
+      font-weight: 700;
+      line-height: 1.30vw;
+      letter-spacing: 10%;
+      color: $color-scroll-down-line;
+      margin-left: 1.98vw;
+   }
+
+   &__line{
+      width: 25.42vw;
+      height: 0.16vw;
+      background-color: $color-scroll-down-line;
+   }
+   
+}

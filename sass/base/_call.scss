@@ -1,0 +1,60 @@
+.call{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 0.63vw;
+   font-weight: 400;
+   line-height: 1.09vw;
+   letter-spacing: 5%;
+   color: $color-links;
+
+   &__work-schedule{
+      display: flex;
+      align-items: center;
+   }
+
+   &__work-schedule-icon{
+      display: block;
+      width: 0.21vw;
+      height: 0.21vw;
+      background-color: $color-point-background;
+      margin-right: 0.31vw;
+   }
+
+   &__number{
+      display: flex;
+      align-items: center;
+      font-size: 1.04vw;
+      font-weight: 700;
+      line-height: 0.52vw;
+      margin-top: 0.31vw;
+      margin-bottom: 0.31vw;
+   }
+
+   &__number-icon{
+      display: inline-block;
+      width: 0.47vw;
+      height: 0.26vw;
+      background: url(../../assets/icons/Стрелкa.svg);
+      background-position: center;
+      background-size: cover;
+      margin-left: 0.21vw;
+   }
+
+   &__order-call{
+      display: flex;
+      align-items: center;
+      border-bottom: 1px dashed $color-for-colored-button;
+   }
+
+   &__order-call-icon{
+      display: inline-block;
+      width: 0.31vw;
+      height: 0.31vw;
+      background: url(../../assets/icons/Order-call.svg);
+      background-position: center;
+      background-size: cover;
+      margin-left: 0.31vw;
+   }
+}
+

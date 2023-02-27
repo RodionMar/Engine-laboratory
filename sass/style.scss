@@ -4,9 +4,20 @@
 @import 'base/base';
 @import 'base/buttons';
 @import 'base/logo';
+@import 'base/adress';
+@import 'base/map';
+@import 'base/price';
+@import 'base/question';
+@import 'base/call';
+@import 'base/navigation';
+@import 'base/scroll-down';
+
+// Fonts
+@import 'fonts/fonts';
 
 // Layouts
 @import 'layouts/header';
+@import 'layouts/main';
 
 // Components
 @import 'components/hero';
