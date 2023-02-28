@@ -24,4 +24,42 @@
       background-color: $color-scroll-down-line;
    }
    
+   &__mouse-icon{
+      display: block;
+      width: 0.94vw ;
+      height: 1.67vw;
+      background: url(../../assets/icons/mouse-icon.svg);
+      background-position: center;
+      background-size: cover;
+      transform: rotate(90deg);
+      position: relative;
+      margin-right: 1.98vw;
+   }
+
+   &__mouse-point-icon{
+      display: block;
+      width: 0.21vw;
+      height: 0.21vw;
+      background: url(../../assets/icons/mouse-point-icon.svg);
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      top: 0.55vw;
+      left: 0.36vw;
+      animation-duration: 2s;
+      animation-name: mouse-point-icon;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+   }
+
+   @keyframes mouse-point-icon {
+      from{
+         top: 0.55vw;
+
+      }
+
+      to{
+         top: 0.85vw;
+      }
+   }
 }
