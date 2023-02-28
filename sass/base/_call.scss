@@ -32,19 +32,24 @@
    }
 
    &__number-icon{
-      display: inline-block;
-      width: 0.47vw;
-      height: 0.26vw;
-      background: url(../../assets/icons/Стрелкa.svg);
-      background-position: center;
-      background-size: cover;
       margin-left: 0.21vw;
    }
 
    &__order-call{
       display: flex;
       align-items: center;
-      border-bottom: 1px dashed $color-for-colored-button;
+      position: relative;
+      text-decoration: none;
+      &:hover .call__red-point-block{
+         column-gap: 0.1vw;
+         transition: 0.5s;
+         cursor: pointer;
+      }
+
+      &:not(:hover) .call__red-point-block{
+         transition: 0.5s;
+         cursor: pointer;
+      }
    }
 
    &__order-call-icon{
@@ -55,6 +60,11 @@
       background-position: center;
       background-size: cover;
       margin-left: 0.31vw;
+   }
+
+   &__red-point-block{
+      display: flex;
+      top: 1vw;
    }
 }
 

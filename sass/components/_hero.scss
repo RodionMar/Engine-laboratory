@@ -12,7 +12,7 @@
    &__first-row-title{
       width: 52.66vw;
       margin-left: 5.99vw;
-      color: $color-border;
+      color: $color-light;
    }
 
    &__first-row-title-bold-text{
@@ -23,11 +23,7 @@
    }
 
    &__first-row-subtitle{
-      font-size: 27px;
-      font-weight: 400;
-      line-height: 45px;
-      letter-spacing: 2%;
-      color: $color-border;
+      color: $color-light;
       margin-top: 2.34vw;
       margin-bottom: 2.34vw;
       margin-left: 5.99vw;
@@ -42,13 +38,72 @@
       margin-right: 1.15vw;
    }
 
-   &__second-row{
+   &__second-row, .second-row{
       display: flex;
+      margin-top: 6.46vw;
+      margin-left: 5.99vw;
 
-      &__first-column{
-         display: flex;
-         flex-direction: column;
-         background-color: white;
+      &__title{
+         font-size: 0.89vw;
+         font-weight: 300;
+         line-height: 1.41vw;
+         letter-spacing: 2%;
+         color: $color-light;
+
+         &-bold-text{
+            font-size: 0.89vw;
+            font-weight: 800;
+            line-height: 1.41vw;
+            letter-spacing: 2%;
+         }
+      }
+
+      &__first-column, .first-column{
+         border-right: 1px solid $color-light;
+
+         &__title{
+            width: 10.73vw;
+            font-weight: 300;
+            margin-top: 1.15vw;
+            margin-right: 4.95vw;
+            margin-bottom: 3.70vw;
+
+            &-bold-text{
+               font-weight: 700;
+            }
+         }
+      }
+
+      &__second-column, .second-column{
+         border-right: 1px solid $color-light;
+
+         &__check-mark-icon{
+            margin-left: 4.95vw;
+         }
+
+         &__title{
+            width: 11.56vw;
+            margin: 0.99vw 4.95vw 1.77vw 4.95vw;
+         }
+      }
+      &__third-column, .third-column{
+         border-right: 1px solid $color-light;
+         &__check-mark-icon{
+            margin-left: 4.95vw;
+         }
+         &__title{
+            width: 7.40vw;
+            margin: 0.99vw 4.95vw 3.18vw 4.95vw;
+         }
+      }
+      &__fourth-column, .fourth-column{
+         &__check-mark-icon{
+            margin-left: 4.95vw;
+         }
+         &__title{
+            width: 20vw;
+            margin: 0.99vw 4.95vw 1.77vw 4.95vw;
+         }
       }
    }
 }

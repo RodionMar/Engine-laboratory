@@ -1,15 +1,7 @@
 .price{
    display: flex;
    align-items: center;
-
-   &__icon{
-      width: 1.82vw;
-      height: 1.82vw;
-      display: block;
-      background: url(../../assets/icons/Иконка.svg);
-      background-position: center;
-      background-size: cover;
-   }
+   text-decoration: none;
 
    &__title{
       width: 7.66vw;
@@ -18,7 +10,28 @@
       line-height: 0.99vw;
       letter-spacing: 5%;
       margin-left: 0.57vw;
-      border-bottom: 1px dashed $color-for-colored-button;
       color: $color-links;
+      position: relative;
+   }
+
+   &__title:hover &__red-point-block &__red-point{
+      margin-right: 0.1vw;
+      transition: 0.5s;
+      cursor: pointer;
+   }
+
+   &__title:not(hover) &__red-point-block &__red-point{
+      transition: 0.5s;
+   }
+
+   &__red-point-block{
+      top: 0.26vw;
+      left: 0;
+      .price__red-point{
+         margin-right: 0.16vw;
+         &--mr-0{
+            margin-right: 0;
+         }
+      }
    }
 }

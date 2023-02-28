@@ -18,8 +18,8 @@
       <!-- <div class="header__container container"> -->
       <div class="header__first-row">
          <a href="index.html" class="logo">
-            <object data="assets/images/logo.svg" type="image/svg+xml" class="logo__image">
-            </object>
+            <span class="logo__image">
+            </span>
             <div class="logo__text">
                Ремонтируем двигатели
                Hyundai и Kia с 2012 года
@@ -31,32 +31,41 @@
                проезд, с4 а/2
             </div>
          </div>
-         <div class="header__map map">
+         <a href="#" class="header__map map">
             <span class="map__icon"></span>
             <div class="map__text">
                <div class="map__title">
                   Смотреть на карте
+                  <div class="map__red-point-block red-point-block">
+                     <span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span><span class="map__red-point red-point"></span>
+                  </div>
+                  
                </div>
                <!-- <div class="map__title-points">
 
                </div> -->
             </div>
-         </div>
-         <div class="header__price price">
+         </a>
+         <a href="#" class="header__price price">
             <span class="price__icon"></span>
             <div class="price__text">
                <div class="price__title">Рассчитать стоимость
-                  ремонта за 45 сек</div>
+                  ремонта за 45 сек
+                  <div class="price__red-point-block red-point-block">
+                     <span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point price__red-point--mr0 red-point"></span><br>
+                     <span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span><span class="price__red-point red-point"></span>
+                  </div>
+               </div>
             </div>
-         </div>
+         </a>
          <div class="header__question question">
             <div class="question__title">
                Задайте вопрос,
                мы сейчас онлайн
             </div>
-            <span class="question__whatsapp-icon"></span>
-            <span class="question__telegram-icon"></span>
-            <span class="question__viber-icon"></span>
+            <a href="https://www.whatsapp.com/?lang=ru" class="question__whatsapp-icon whatsapp-icon"></a>
+            <a href="https://web.telegram.org" class="question__telegram-icon telegram-icon"></a>
+            <a href="https://www.viber.com/ru/" class="question__viber-icon viber-icon"></a>
          </div>
          <div class="header__call call">
             <div class="call__work-schedule">
@@ -64,11 +73,29 @@
                Звоните Пн-Сб 10:00 - 21:00
             </div>
             <div class="call__number">
-               +7 (925) 103 33 30 <span class="call__number-icon"></span>
+               +7 (925) 103 33 30 <span class="call__number-icon number-icon"></span>
             </div>
-            <div class="call__order-call">
-               Заказать звонок <span class="call__order-call-icon"></span>
-            </div>
+            <a href="#" class="call__order-call">
+               <label for="order-pop-up-window">Заказать звонок <span class="call__order-call-icon"></span></label>
+               <input type="checkbox" id="order-pop-up-window">
+               <div class="call__order-call-pop-up-window">
+                  <div class="pop-up-window-title">
+                     Быстро оставить заявку
+                  </div>
+                  <div class="pop-up-window-subtitle">
+
+                  </div>
+                  <div class="pop-up-window-text">
+
+                  </div>
+                  <form action="" class="pop-up-window-form">
+                     
+                  </form>
+               </div>
+               <div class="call__red-point-block red-point-block">
+                  <span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span>
+               </div>
+            </a>
          </div>
       </div>
       <div class="header__horizontal-line"></div>
@@ -104,7 +131,7 @@
          <div class="hero__first-row">
             <h1 class="hero__first-row-title">
                Профессиональный <span class="hero__first-row-title-bold-text">ремонт двигателей</span> HYUNDAI и KIA
-               <span class="hero__first-row-title-bold-text">с гарантией 1 год</span>за 4-7 дней
+               <span class="hero__first-row-title-bold-text">с гарантией 1 год</span> за 4-7 дней
             </h1>
             <h2 class="hero__first-row-subtitle">
                в специализированном автосервисе полного цикла
@@ -122,30 +149,30 @@
                </button>
             </div>
          </div>
-         <div class="hero__second-row">
-            <div class="second-row__first-column">
+         <div class="hero__second-row second-row">
+            <div class=" second-row__first-column first-column">
                <span class="first-column__check-mark-icon check-mark-icon"></span>
                <div class="first-column__title second-row__title">
-                  <span class="bold-text">Без предоплаты</span>Оплата после ремонта
+                  <span class="first-column__title-bold-text second-row__title-bold-text">Без предоплаты</span><br>Оплата после ремонта
                </div>
             </div>
-            <div class="second-row__second-column">
+            <div class="second-row__second-column second-column">
                <span class="second-column__check-mark-icon check-mark-icon"></span>
                <div class="second-column__title second-row__title">
-                  <span class="bold-text">Работаем официально</span> с оформлением заказ-нарядов и чеков
+                  <span class="second-row__title-bold-text">Работаем официально</span> с оформлением заказ-нарядов и чеков
                </div>
             </div>
-            <div class="second-row__third-column">
+            <div class="second-row__third-column third-column">
                <span class="third-column__check-mark-icon check-mark-icon"></span>
                <div class="third-column__title second-row__title">
-                  <span class="bold-text">Оригинальные запчасти</span>
+                  <span class="second-row__title-bold-text">Оригинальные запчасти</span>
 
                </div>
             </div>
-            <div class="second-row__fourth-column">
+            <div class="second-row__fourth-column fourth-column">
                <span class="fourth-column__check-mark-icon check-mark-icon"></span>
                <div class="fourth-column__title second-row__title">
-                  <span class="bold-text">Лучшие цены на рынке</span> благодаря прямым поставкам запчастей и
+                  <span class="second-row__title-bold-text">Лучшие цены на рынке</span> благодаря прямым поставкам запчастей и
                   собственному цеху механической обработки
                </div>
             </div>

@@ -1,14 +1,16 @@
 .map{
    display: flex;
    align-items: center;
+   text-decoration: none;
    
    &__icon{
       display: block;
       width: 0.63vw;
       height: 0.78vw;
+      background: url(../../assets/icons/see-on-map.svg);
       background-position: center;
       background-size: cover;
-      background: url(../../assets/icons/see-on-map.svg);
+      background-repeat: no-repeat;
       margin-right: 0.52vw;
    }
 
@@ -18,8 +20,22 @@
       font-weight: 700;
       line-height: 0.99vw;
       letter-spacing: 5%;
+      position: relative;
       color: $color-links;
-      border-bottom: 1px dashed $color-for-colored-button;
-      padding-bottom: 0.21vw;
+   }
+
+   &__red-point-block{
+      display: flex;
+      top: 0.99vw;
+   }
+
+   &__title:hover > &__red-point-block{
+      column-gap: 0.10vw;
+      transition: 0.5s;
+      cursor: pointer;
+   }
+
+   &__title:not(:hover) > &__red-point-block{
+      transition: 0.5s;
    }
 }
