@@ -1,0 +1,72 @@
+.logo-image{
+   
+}
+
+.red-point-block{
+   column-gap: 0.16vw;
+   position: absolute;
+   .red-point{
+      display: inline-block;
+      width: 0.10vw;
+      height: 0.10vw;
+      background: $color-for-colored-button;
+      border-radius: 50%;
+   }
+}
+
+.price{
+   &__icon{
+      width: 1.82vw;
+      height: 1.82vw;
+      display: block;
+      background: url(../../assets/icons/Иконка.svg);
+      background-position: center;
+      background-size: cover;
+   }
+}
+
+.whatsapp-icon{
+   background: url(../../assets/icons/Whatsapp-icon.svg);
+}
+
+.telegram-icon{
+   background: url(../../assets/icons/Tg-icon.svg);
+}
+
+.viber-icon{
+   background: url(../../assets/icons/Viber-icon.svg);
+}
+
+.whatsapp-svg:hover{
+   fill: aqua !important;
+}
+
+.whatsapp-icon,
+.telegram-icon,
+.viber-icon{
+   display: block;
+   width: 2.34vw;
+   height: 2.34vw;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   text-decoration: none;
+}
+
+.number-icon{
+   display: inline-block;
+   width: 0.47vw;
+   height: 0.26vw;
+   background: url(../../assets/icons/Стрелкa.svg);
+   background-position: center;
+   background-size: cover;
+}
+
+.check-mark-icon{
+   display: block;
+   width: 0.68vw;
+   height: 0.52vw;
+   background: url(../../assets/icons/Галочка.svg);
+   background-position: center;
+   background-size: cover;
+}
