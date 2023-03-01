@@ -14,7 +14,10 @@
       display: block;
       width: 11.09vw;
       height: 2.60vw;
-      background: url(../../assets/images/logo.svg)
+      background: url(../../assets/images/logo.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
    };
 
    &__text{
