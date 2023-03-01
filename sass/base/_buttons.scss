@@ -55,32 +55,32 @@
    &:not(:hover) > .red-button__arrow-icon{
       transition: 0.5s;
    }
-}
 
-@keyframes red-button{
-   0% {
-      left: -1.56vw;
-      margin-left: 0px;
-    }
-    30% {
-      left: 110%;
-      margin-left: 4.17vw;
-    }
-    100% {
-      left: 110%;
-      margin-left: 4.17vw;
-    }
-}
+   .red-button__arrow-icon{
+      display: block;
+      width: 1.15vw;
+      height: 1.15vw;
+      background: url(../../assets/icons/Hero-red-button-arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-left: 0.73vw;
+   }
 
-.red-button__arrow-icon{
-   display: inline-block;
-   width: 1.15vw;
-   height: 1.15vw;
-   background: url(../../assets/icons/Hero-red-button-arrow.svg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   margin-left: 0.73vw;
+   @keyframes red-button{
+      0% {
+         left: -1.56vw;
+         margin-left: 0px;
+       }
+       30% {
+         left: 110%;
+         margin-left: 4.17vw;
+       }
+       100% {
+         left: 110%;
+         margin-left: 4.17vw;
+       }
+   }
 }
 
 .button--transparent-button{
@@ -118,30 +118,50 @@
    &:hover{
       background: rgba(0, 0, 0, 0.272);
    }
+
+   .transparent-button__call-icon{
+      display: block;
+      width: 1.56vw;
+      height: 1.56vw;
+      background: url(../../assets/icons/Hero-call-icon.svg);
+      background-position: center;
+      background-size: cover;
+      margin-right: 0.63vw;
+   }
+
+   @keyframes transparent-button{
+      0% {
+         left: -1.56vw;
+         margin-left: 0px;
+       }
+       30% {
+         left: 110%;
+         margin-left: 4.17vw;
+       }
+       100% {
+         left: 110%;
+         margin-left: 4.17vw;
+       }
+   }
 }
 
-
-@keyframes transparent-button{
-   0% {
-      left: -1.56vw;
-      margin-left: 0px;
-    }
-    30% {
-      left: 110%;
-      margin-left: 4.17vw;
-    }
-    100% {
-      left: 110%;
-      margin-left: 4.17vw;
-    }
-}
-
-.transparent-button__call-icon{
-   display: block;
-   width: 1.56vw;
-   height: 1.56vw;
-   background: url(../../assets/icons/Hero-call-icon.svg);
-   background-position: center;
-   background-size: cover;
-   margin-right: 0.63vw;
+.pop-up-window-order-submit-button{
+   width: 18.91vw;
+   height: 4.43vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.83vw;
+   font-weight: 600;
+   line-height: 1.25vw;
+   letter-spacing: 4%;
+   border: none;
+   border-radius: 3.80vw;
+   background-color: $color-for-colored-button;
+   color: $color-light;
+   margin: auto;
+   &:hover{
+      background: #f9625a;
+      cursor: pointer;
+   }
 }

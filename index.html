@@ -75,27 +75,38 @@
             <div class="call__number">
                +7 (925) 103 33 30 <span class="call__number-icon number-icon"></span>
             </div>
-            <a href="#" class="call__order-call">
-               <label for="order-pop-up-window">Заказать звонок <span class="call__order-call-icon"></span></label>
-               <input type="checkbox" id="order-pop-up-window">
-               <div class="call__order-call-pop-up-window">
+            <div class="call__order-call">
+               <input type="checkbox" id="order-call-pop-up-window">
+               <label for="order-call-pop-up-window">Заказать звонок <span class="call__order-call-icon"></span></label>
+               <label for="order-call-pop-up-window" class="order-call-pop-up-window__close-button"></label>
+               <form method="post" class="order-call-pop-up-window-form">
                   <div class="pop-up-window-title">
                      Быстро оставить заявку
                   </div>
                   <div class="pop-up-window-subtitle">
-
+                     Введите номер — позвоним вам
+                     в течение 5-10 минут в рабочее время
                   </div>
                   <div class="pop-up-window-text">
-
+                     Введите ваш номер телефона
                   </div>
-                  <form action="" class="pop-up-window-form">
-                     
-                  </form>
-               </div>
+                  <input id="pop-up-window-order-phone" type="text" maxlength="10" placeholder="+ 7 (_ _ _) _ _ _ - _ _ - _ _" required>
+                  <button type="submit" class="pop-up-window-order-submit-button">Перезвоните мне</button>
+                  <div class="pop-up-window-block-check-mark">
+                     <input type="checkbox" id="pop-up-window-check-mark" required checked>
+                     <label for="pop-up-window-check-mark" class="pop-up-window-check-mark-button"><span></span></label>
+                     <label for="pop-up-window-check-mark" class="pop-up-window-check-mark__title">
+                        Нажимая кнопку вы соглашаетесь  с условиями
+                        <a href="#">
+                           Политики конфиденциальности
+                        </a>
+                     </label>
+                  </div>
+               </form>
                <div class="call__red-point-block red-point-block">
                   <span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span><span class="call__red-point red-point"></span>
                </div>
-            </a>
+            </div>
          </div>
       </div>
       <div class="header__horizontal-line"></div>
@@ -180,6 +191,11 @@
          <!-- </div> -->
       </section>
    </main>
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+   <script>
+      $("#pop-up-window-order-phone").mask("+ 7 (9 9 9) 9 9 9 - 9 9 - 9 9");
+   </script>
 </body>
 
 </html>
