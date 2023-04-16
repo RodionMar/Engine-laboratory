@@ -6,11 +6,11 @@
       line-height: 0.83vw;
       letter-spacing: 15%;
       text-transform: uppercase;
-      color: $color-links;
    }
 
    &__item a{
       text-decoration: none;
+      color: $color-links;
    }
 
    &__item a:hover{

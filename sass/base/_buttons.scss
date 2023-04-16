@@ -58,8 +58,8 @@
 
    .red-button__arrow-icon{
       display: block;
-      width: 1.15vw;
-      height: 1.15vw;
+      min-width: 1.15vw;
+      min-height: 1.15vw;
       background: url(../../assets/icons/Hero-red-button-arrow.svg);
       background-repeat: no-repeat;
       background-position: center;
